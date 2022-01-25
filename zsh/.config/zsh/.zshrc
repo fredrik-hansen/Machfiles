@@ -17,7 +17,7 @@ unsetopt BEEP
 autoload -Uz compinit
 # zstyle ':completion:*' menu select
 # zstyle ':completion::complete:lsof:*' menu yes select
-zmodload zsh/complist
+# zmodload zsh/complist
 # compinit
 _comp_options+=(globdots)		# Include hidden files.
 
