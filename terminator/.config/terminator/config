@@ -1,0 +1,22 @@
+[global_config]
+  title_hide_sizetext = True
+[keybindings]
+  move_tab_right = <Shift>Right
+  move_tab_left = <Shift>Left
+  full_screen = <Alt>Return
+[profiles]
+  [[default]]
+    background_darkness = 0.92
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#00ff00"
+    scrollback_lines = 50000
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
