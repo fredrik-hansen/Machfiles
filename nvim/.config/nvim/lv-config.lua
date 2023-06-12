@@ -5,7 +5,8 @@ Formatters and linters should be
 filled in as strings with either
 a global executable or a path to
 an executable
-]] -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
+]]
+-- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 -- general
 O.auto_complete = true
 O.colorscheme = 'spacegray'
@@ -47,7 +48,7 @@ O.plugin.markdown_preview.active = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 O.treesitter.ensure_installed = "all"
-O.treesitter.ignore_install = {"haskell"}
+O.treesitter.ignore_install = { "haskell" }
 O.treesitter.highlight.enabled = true
 
 O.lang.clang.diagnostics.virtual_text = false
@@ -106,7 +107,7 @@ O.lang.rust.autoformat = true
 
 -- vim.cmd('autocmd VimLeave,VimSuspend * set guicursor=a:ver90') -- Beam
 -- vim.cmd('autocmd VimLeave,VimSuspend * set guicursor=a:hor20') -- Underline
-
+vim.cmd('autocmd Unsetmouse * set mouse=')
 -- NOTE: Above code doesn't take a value from the terminal's cursor and
 --       replace it. It hardcodes the cursor shape.
 --       And I think `ver` means vertical and `hor` means horizontal.
@@ -117,4 +118,3 @@ O.lang.rust.autoformat = true
 -- custom autocommands
 -- user defined plugin config
 -- custom settings
-
